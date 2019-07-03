@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="ca8e6794-e60f-460f-9abd-c10f926deb99" Version="1.1" Language="en-US" Publisher="Zwei Developer" />
+        <Identity Id="ca8e6794-e60f-460f-9abd-c10f926deb99" Version="1.2" Language="en-US" Publisher="Zwei Developer" />
         <DisplayName>GitAutoFetch</DisplayName>
-        <Description xml:space="preserve">Auto fetch in Git, menu location in solution explorer (Git AutoFetch and Configure Fetching)Auto fetch in Git, menu location in solution explorer (Git AutoFetch and Configure Fetching)</Description>
+        <Description xml:space="preserve">Auto fetch in Git, menu location in solution explorer (Git AutoFetch and Configure Fetching)</Description>
         <Icon>Logo.png</Icon>
         <Tags>git, autofetch, git-autofetch, fetch</Tags>
     </Metadata>
@@ -19,5 +19,6 @@
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-    </Assets>
+      <Asset Type="Microsoft.VisualStudio.ToolboxControl" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
 </PackageManifest>
