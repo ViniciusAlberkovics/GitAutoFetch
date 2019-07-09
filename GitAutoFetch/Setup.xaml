@@ -5,8 +5,49 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="250" d:DesignWidth="300">
-    <Grid>
-        <Button Content="Restore" Height="50" HorizontalAlignment="Left" Margin="10,100,0,0" Name="btnRestore" VerticalAlignment="Top" Width="100" Click="BtnRestore_Click" />
-        <Button Content="Save" Height="50" HorizontalAlignment="Left" Margin="190,100,0,0" Name="btnSave" VerticalAlignment="Top" Width="100" Click="BtnSave_Click" />
+    <Grid Background="#FF2D2D30">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Border Background="#FF007ACC" Height="1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Width="14" Margin="5,0,0,10" HorizontalAlignment="Left"></Border>
+        <Border Background="#FF007ACC" Height="1" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="4" Width="210" Margin="0,0,5,10" HorizontalAlignment="Right"></Border>
+        <Border Background="#FF007ACC" Height="1" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" Width="290"></Border>
+        <Border Background="#FF007ACC" Height="190" Grid.Row="2" Grid.RowSpan="10" Grid.Column="0" Width="1"></Border>
+        <Border Background="#FF007ACC" Height="190" Grid.Row="2" Grid.RowSpan="10" Grid.Column="6" Width="1"></Border>
+        
+        <Grid Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0">
+            <TextBlock Foreground="White" Margin="10,5,0,0" FontSize="14">Setup Git AutoFetch</TextBlock>
+        </Grid>
+        <Grid Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1">
+            <TextBlock Foreground="White" Margin="10,-3,0,0" Name="txbExplication" FontSize="11">The fetch time interval is set in minutes</TextBlock>
+        </Grid>
+        <Grid Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2">
+            <TextBlock Foreground="White" Margin="10,-2,0,0" Name="txbTitle" FontSize="10">Configurations</TextBlock>
+        </Grid>
+        <Grid Grid.Column="3" Grid.Row="10">
+            <Button Content="Restore" Height="19" HorizontalAlignment="Left" Name="btnRestore" VerticalAlignment="Top" Width="60" Margin="10,1,0,0" Click="BtnRestore_Click" Background="#FF3F3F46" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        </Grid>
+        <Grid Grid.Column="4" Grid.Row="10">
+            <Button Content="Save" Height="19" HorizontalAlignment="Left" Name="btnSave" VerticalAlignment="Top" Width="60" Margin="10,1,0,0" Click="BtnSave_Click" Background="#FF3F3F46" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Grid>
     </Grid>
 </UserControl>

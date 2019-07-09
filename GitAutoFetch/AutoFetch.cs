@@ -36,7 +36,7 @@ namespace GitAutoFetch
         {
             this.package = package ?? throw new ArgumentNullException(nameof(package));
             commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
-
+            
             CommandID menuCommandID = new CommandID(CommandSet, CommandId);
             MenuCommand menuItem = new MenuCommand(this.Execute, menuCommandID);
             commandService.AddCommand(menuItem);
