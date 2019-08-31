@@ -82,6 +82,10 @@ namespace GitAutoFetch
                     await AutoFetch.InitializeAsync(this, config);
                     await OpenConfig.InitializeAsync(this, config);
                 });
+                
+                var wpf = new ProvideToolboxControlAttribute("GitAutoFetch.Setup", true);
+                wpf.Register(null);
+                new Setup();
             }
             catch (Exception ex)
             {
